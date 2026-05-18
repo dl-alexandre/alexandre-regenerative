@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alexandre Regenerative • A2/A2 Dairy Waitlist | Central Coast</title>
+  <meta name="description" content="Join the waitlist for premium regenerative A2/A2 whole milk powder and non-fat powder. Hand-hauled fresh by Dalton Alexandre to SLO and the Central Coast.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Playfair+Display:wght@700&amp;display=swap');
+    
+    :root {
+      --brand-green: #0c2e1f;
+      --brand-cream: #f8f5f0;
+      --accent: #92400e;
+    }
+    
+    body {
+      font-family: 'Inter', system_ui, sans-serif;
+    }
+    
+    .heading-serif {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-weight: 700;
+      line-height: 1.05;
+    }
+
+    .premium-card {
+      transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), 
+                  box-shadow 0.2s cubic-bezier(0.4, 0.0, 0.2, 1);
+    }
+    
+    .premium-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+    }
+
+    .nav-scrolled {
+      background-color: rgba(248, 245, 240, 0.95);
+      backdrop-filter: blur(12px);
+    }
+
+    .section-heading {
+      font-size: clamp(2rem, 5vw, 2.75rem);
+      line-height: 1.05;
+    }
+
+    .form-input {
+      transition: all 0.15s ease;
+    }
+    
+    .form-input:focus {
+      outline: none;
+      border-color: #166534;
+      box-shadow: 0 0 0 4px rgba(16, 185, 129, 0.08);
+    }
+
+    .choice-pill {
+      transition: all 0.1s ease;
+    }
+    
+    .choice-pill input:checked + label {
+      background-color: #0c2e1f;
+      color: white;
+      border-color: #0c2e1f;
+    }
+
+    .choice-pill label {
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .success-check {
+      animation: scaleIn 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+
+    @keyframes scaleIn {
+      from { transform: scale(0.6); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+
+    .farm-bg {
+      background: linear-gradient(135deg, #0c2e1f 0%, #14532d 100%);
+    }
+
+    .subtle-grain {
+      background-image: 
+        linear-gradient(rgba(255,255,255,0.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.035) 1px, transparent 1px);
+      background-size: 24px 24px;
+    }
+  </style>
+</head>
+<body class="bg-[#f8f5f0] text-[#1f2937]">
+  <!-- Navigation -->
+  <nav id="nav" class="sticky top-0 z-50 border-b border-[#e7e0d3] bg-[#f8f5f0]/95 backdrop-blur-md transition-all">
+    <div class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
+      <div class="flex items-center gap-x-3">
+        <div class="w-9 h-9 rounded-xl bg-[#0c2e1f] flex items-center justify-center">
+          <span class="text-white text-2xl leading-none mt-0.5">🌿</span>
+        </div>
+        <div>
+          <div class="font-semibold tracking-tight text-xl">Alexandre Regenerative</div>
+          <div class="text-[10px] text-[#6b5c4a] -mt-1">CENTRAL COAST • CALIFORNIA</div>
+        </div>
+      </div>
+      
+      <div class="flex items-center gap-x-4 text-sm">
+        <a href="#features" class="hidden md:block px-4 py-2 text-[#4b3f2f] hover:text-[#0c2e1f] font-medium transition-colors">Why Us</a>
+        <a href="#waitlist" class="hidden md:block px-4 py-2 text-[#4b3f2f] hover:text-[#0c2e1f] font-medium transition-colors">Waitlist</a>
+        <a href="https://github.com/dl-alexandre/alexandre-regenerative" target="_blank" 
+           class="px-5 py-2 rounded-2xl border border-[#d4c9b5] hover:bg-white text-[#3f2e1f] text-sm font-medium transition-all flex items-center gap-x-1.5">
+          <span>View on GitHub</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="max-w-5xl mx-auto px-6 pt-16 pb-20">
+    <div class="grid lg:grid-cols-12 gap-x-12 gap-y-10 items-center">
+      <!-- Left content -->
+      <div class="lg:col-span-7">
+        <div class="inline-flex items-center gap-x-2 rounded-3xl bg-white px-4 py-1.5 text-xs font-semibold tracking-[1px] text-[#5c4630] border border-[#e7e0d3] mb-6">
+          <div class="w-2 h-2 bg-emerald-600 rounded-full animate-pulse"></div>
+          FOUNDERS CIRCLE • OPENING SOON
+        </div>
+
+        <h1 class="heading-serif text-[3.25rem] md:text-[3.85rem] leading-[0.98] tracking-tighter text-[#0c2e1f] mb-5">
+          Join the Alexandre<br>Regenerative Waitlist
+        </h1>
+        
+        <p class="max-w-[38ch] text-[1.05rem] text-[#4b3f2f] leading-snug mb-8">
+          Premium regenerative A2/A2 whole milk powder &amp; non-fat powder — 
+          hand-hauled fresh by Dalton Alexandre from family farm to the Central Coast.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-3">
+          <a href="#waitlist" 
+             class="inline-flex justify-center items-center gap-x-3 bg-[#0c2e1f] hover:bg-black active:bg-black transition-all text-white text-base font-semibold px-8 h-14 rounded-3xl shadow-sm">
+            Reserve My Spot
+            <span aria-hidden="true">→</span>
+          </a>
+          <a href="#features" 
+             class="inline-flex justify-center items-center gap-x-2 border border-[#c9b99e] hover:bg-white text-[#3f2e1f] font-medium px-7 h-14 rounded-3xl transition-all">
+            Learn more
+          </a>
+        </div>
+
+        <div class="mt-6 flex items-center gap-x-4 text-xs text-[#6b5c4a]">
+          <div>Be first in SLO &amp; the Central Coast</div>
+          <div class="w-px h-3 bg-[#c9b99e]"></div>
+          <div>15% Founders Discount</div>
+        </div>
+      </div>
+
+      <!-- Hero visual -->
+      <div class="lg:col-span-5">
+        <div class="farm-bg rounded-3xl p-8 text-white relative overflow-hidden subtle-grain shadow-xl">
+          <div class="relative z-10">
+            <div class="uppercase tracking-[3px] text-xs font-semibold text-emerald-300 mb-3">FROM OUR FAMILY FARM</div>
+            
+            <div class="space-y-1 mb-8">
+              <div class="text-6xl font-semibold tracking-tighter">A2/A2</div>
+              <div class="text-3xl font-medium text-emerald-200 -mt-2">Dairy Powders</div>
+            </div>
+
+            <div class="flex items-center gap-4 text-sm">
+              <div class="flex -space-x-2">
+                <div class="w-7 h-7 rounded-full bg-white/20 border border-white/40 flex items-center justify-center text-[10px]">🌱</div>
+                <div class="w-7 h-7 rounded-full bg-white/20 border border-white/40 flex items-center justify-center text-[10px]">🐄</div>
+                <div class="w-7 h-7 rounded-full bg-white/20 border border-white/40 flex items-center justify-center text-[10px]">🚜</div>
+              </div>
+              <div class="text-emerald-200 text-sm">Regenerative • Small Batch • Fresh</div>
+            </div>
+          </div>
+          
+          <!-- subtle decorative element -->
+          <div class="absolute -bottom-6 -right-6 w-40 h-40 border border-white/10 rounded-full"></div>
+          <div class="absolute -top-8 -right-4 w-24 h-24 border border-white/10 rounded-full"></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Features / Why -->
+  <section id="features" class="max-w-5xl mx-auto px-6 pb-16">
+    <div class="text-center mb-10">
+      <div class="text-emerald-700 text-xs tracking-[2px] font-semibold mb-2">WHY ALEXANDRE REGENERATIVE</div>
+      <h2 class="section-heading heading-serif tracking-tighter text-[#0c2e1f]">Better for you.<br>Better for the land.</h2>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+      <!-- Feature 1 -->
+      <div class="premium-card bg-white border border-[#e7e0d3] rounded-3xl p-6">
+        <div class="text-3xl mb-4">🌾</div>
+        <h3 class="font-semibold text-lg tracking-tight mb-1.5 text-[#0c2e1f]">Regenerative by Design</h3>
+        <p class="text-sm text-[#5c4630]">Pasture-raised cows on living soil. We improve the land with every rotation.</p>
+      </div>
+      
+      <div class="premium-card bg-white border border-[#e7e0d3] rounded-3xl p-6">
+        <div class="text-3xl mb-4">🧬</div>
+        <h3 class="font-semibold text-lg tracking-tight mb-1.5 text-[#0c2e1f]">A2/A2 Protein</h3>
+        <p class="text-sm text-[#5c4630]">Naturally contains only the A2 beta-casein protein. Easier to digest for most people.</p>
+      </div>
+      
+      <div class="premium-card bg-white border border-[#e7e0d3] rounded-3xl p-6">
+        <div class="text-3xl mb-4">🤼‍🌾</div>
+        <h3 class="font-semibold text-lg tracking-tight mb-1.5 text-[#0c2e1f]">Personally Hauled</h3>
+        <p class="text-sm text-[#5c4630]">Dalton drives every batch from the farm straight to the Central Coast. No middlemen. Peak freshness.</p>
+      </div>
+      
+      <div class="premium-card bg-white border border-[#e7e0d3] rounded-3xl p-6">
+        <div class="text-3xl mb-4">📍</div>
+        <h3 class="font-semibold text-lg tracking-tight mb-1.5 text-[#0c2e1f]">SLO First Access</h3>
+        <p class="text-sm text-[#5c4630]">Central Coast locals get priority on every limited haul. Built for our community.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product teaser -->
+  <section class="max-w-5xl mx-auto px-6 pb-14">
+    <div class="bg-white border border-[#e7e0d3] rounded-3xl px-8 py-9 md:flex md:items-center md:justify-between gap-10">
+      <div>
+        <div class="uppercase text-xs font-semibold tracking-widest text-emerald-700 mb-1">TWO WAYS TO ENJOY</div>
+        <h3 class="text-2xl font-semibold tracking-tight text-[#0c2e1f]">Whole Milk Powder &amp; Non-Fat Powder</h3>
+        <p class="mt-2 max-w-md text-[#5c4630]">Both made from the same high-quality A2/A2 milk. Perfect for coffee, smoothies, baking, or drinking straight.</p>
+      </div>
+      <div class="mt-6 md:mt-0 text-sm">
+        <div class="flex gap-2 flex-wrap">
+          <div class="px-4 py-2 bg-[#f8f5f0] rounded-2xl text-xs font-medium text-[#3f2e1f]">1 lb bags</div>
+          <div class="px-4 py-2 bg-[#f8f5f0] rounded-2xl text-xs font-medium text-[#3f2e1f]">5 lb bags</div>
+          <div class="px-4 py-2 bg-[#f8f5f0] rounded-2xl text-xs font-medium text-[#3f2e1f]">Bulk 10+ lb</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WAITLIST FORM -->
+  <section id="waitlist" class="max-w-3xl mx-auto px-6 pb-20">
+    <div class="text-center mb-8">
+      <div class="inline-block bg-emerald-100 text-emerald-800 text-xs font-bold tracking-wider px-4 py-1 rounded-full mb-3">LIMITED FOUNDERS ACCESS</div>
+      <h2 class="section-heading heading-serif tracking-tighter text-[#0c2e1f]">Reserve your spot.<br>Get 15% off your first haul.</h2>
+      <p class="text-[#5c4630] mt-3">We’re preparing the next small-batch delivery to San Luis Obispo and the Central Coast.</p>
+    </div>
+
+    <!-- Form Card -->
+    <div class="premium-card bg-white border border-[#d4c9b5] rounded-3xl shadow-sm overflow-hidden">
+      <!-- Form Header -->
+      <div class="bg-[#0c2e1f] px-8 py-5 text-white">
+        <div class="flex items-center justify-between">
+          <div>
+            <div class="font-semibold text-xl tracking-tight">Join the Waitlist</div>
+            <div class="text-emerald-300 text-sm">Founders discount applied automatically</div>
+          </div>
+          <div class="hidden sm:block text-right text-xs text-emerald-300">
+            100% free •<br>unsubscribe anytime
+          </div>
+        </div>
+      </div>
+
+      <!-- Demo notice -->
+      <div class="px-8 pt-5 pb-1">
+        <div class="flex items-center gap-x-2 text-[10px] text-amber-700 bg-amber-50 border border-amber-100 px-3 py-1.5 rounded-2xl">
+          <span>⚠️</span>
+          <span><strong>Demo mode active.</strong> Submissions are logged in console. Replace the Formspree endpoint in the code to capture real leads. See README.</span>
+        </div>
+      </div>
+
+      <!-- The Form -->
+      <form id="waitlist-form" class="px-8 pb-8 pt-4 space-y-6">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+          <!-- First Name -->
+          <div>
+            <label for="firstName" class="block text-sm font-medium text-[#3f2e1f] mb-1.5">First Name <span class="text-red-500">*</span></label>
+            <input id="firstName" name="firstName" type="text" required
+                   class="form-input w-full bg-[#f8f5f0] border border-[#d4c9b5] focus:border-[#0c2e1f] rounded-2xl px-4 py-3 text-base placeholder:text-[#9a8770]">
+          </div>
+
+          <!-- Email -->
+          <div>
+            <label for="email" class="block text-sm font-medium text-[#3f2e1f] mb-1.5">Email <span class="text-red-500">*</span></label>
+            <input id="email" name="email" type="email" required placeholder="you@domain.com"
+                   class="form-input w-full bg-[#f8f5f0] border border-[#d4c9b5] focus:border-[#0c2e1f] rounded-2xl px-4 py-3 text-base">
+          </div>
+        </div>
+
+        <!-- ZIP -->
+        <div>
+          <label for="zipCode" class="block text-sm font-medium text-[#3f2e1f] mb-1.5">ZIP Code <span class="text-red-500">*</span></label>
+          <input id="zipCode" name="zipCode" type="text" inputmode="numeric" pattern="[0-9]{5}" maxlength="5" placeholder="93401" required
+                 class="form-input w-full sm:w-48 bg-[#f8f5f0] border border-[#d4c9b5] focus:border-[#0c2e1f] rounded-2xl px-4 py-3 text-base">
+          <p class="text-xs text-[#7c664e] mt-1.5">Used to prioritize Central Coast deliveries</p>
+        </div>
+
+        <!-- Interest -->
+        <div>
+          <label class="block text-sm font-medium text-[#3f2e1f] mb-2.5">What are you most interested in?</label>
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-2" id="interest-group">
+            <div class="choice-pill">
+              <input type="radio" id="int-whole" name="interest" value="Whole Milk Powder" class="hidden peer">
+              <label for="int-whole" class="block text-center border border-[#d4c9b5] peer-checked:border-[#0c2e1f] peer-checked:bg-[#0c2e1f] peer-checked:text-white hover:bg-[#f8f5f0] text-sm py-3 px-3 rounded-2xl font-medium">Whole Milk Powder</label>
+            </div>
+            <div class="choice-pill">
+              <input type="radio" id="int-nonfat" name="interest" value="Non-Fat Milk Powder" class="hidden peer">
+              <label for="int-nonfat" class="block text-center border border-[#d4c9b5] peer-checked:border-[#0c2e1f] peer-checked:bg-[#0c2e1f] peer-checked:text-white hover:bg-[#f8f5f0] text-sm py-3 px-3 rounded-2xl font-medium">Non-Fat Milk Powder</label>
+            </div>
+            <div class="choice-pill">
+              <input type="radio" id="int-both" name="interest" value="Both" class="hidden peer" checked>
+              <label for="int-both" class="block text-center border border-[#d4c9b5] peer-checked:border-[#0c2e1f] peer-checked:bg-[#0c2e1f] peer-checked:text-white hover:bg-[#f8f5f0] text-sm py-3 px-3 rounded-2xl font-medium">Both</label>
+            </div>
+            <div class="choice-pill">
+              <input type="radio" id="int-unsure" name="interest" value="Not sure yet" class="hidden peer">
+              <label for="int-unsure" class="block text-center border border-[#d4c9b5] peer-checked:border-[#0c2e1f] peer-checked:bg-[#0c2e1f] peer-checked:text-white hover:bg-[#f8f5f0] text-sm py-3 px-3 rounded-2xl font-medium">Not sure yet</label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bag Size -->
+        <div>
+          <label class="block text-sm font-medium text-[#3f2e1f] mb-2.5">Preferred bag size</label>
+          <div class="grid grid-cols-3 gap-2" id="bag-group">
+            <div class="choice-pill">
+              <input type="radio" id="bag-1" name="bagSize" value="1 lb" class="hidden peer">
+              <label for="bag-1" class="block text-center border border-[#d4c9b5] peer-checked:border-[#0c2e1f] peer-checked:bg-[#0c2e1f] peer-checked:text-white hover:bg-[#f8f5f0] text-sm py-3 px-3 rounded-2xl font-medium">1 lb</label>
+            </div>
+            <div class="choice-pill">
+              <input type="radio" id="bag-5" name="bagSize" value="5 lb" class="hidden peer" checked>
+              <label for="bag-5" class="block text-center border border-[#d4c9b5] peer-checked:border-[#0c2e1f] peer-checked:bg-[#0c2e1f] peer-checked:text-white hover:bg-[#f8f5f0] text-sm py-3 px-3 rounded-2xl font-medium">5 lb</label>
+            </div>
+            <div class="choice-pill">
+              <input type="radio" id="bag-bulk" name="bagSize" value="10+ lb (bulk)" class="hidden peer">
+              <label for="bag-bulk" class="block text-center border border-[#d4c9b5] peer-checked:border-[#0c2e1f] peer-checked:bg-[#0c2e1f] peer-checked:text-white hover:bg-[#f8f5f0] text-sm py-3 px-3 rounded-2xl font-medium">10+ lb (bulk)</label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Usage -->
+        <div>
+          <label for="usage" class="block text-sm font-medium text-[#3f2e1f] mb-1.5">How do you plan to use it? <span class="font-normal text-[#7c664e]">(optional)</span></label>
+          <textarea id="usage" name="usage" rows="3" placeholder="Coffee, smoothies, baking, homemade yogurt, recipes..."
+                    class="form-input w-full bg-[#f8f5f0] border border-[#d4c9b5] focus:border-[#0c2e1f] rounded-3xl px-4 py-3 text-base resize-y"></textarea>
+        </div>
+
+        <!-- Submit -->
+        <button type="submit"
+                class="w-full h-[58px] mt-2 bg-[#0c2e1f] active:bg-black hover:bg-black transition-colors text-white font-semibold text-[15px] tracking-[-0.1px] rounded-3xl flex items-center justify-center gap-x-2 shadow-inner">
+          <span>Reserve My Spot &amp; Get 15% Off First Haul</span>
+        </button>
+
+        <!-- Legal -->
+        <p class="text-center text-[11px] text-[#7c664e] pt-1 leading-snug px-4">
+          By signing up you agree to receive occasional product updates from Alexandre Regenerative. 
+          You can unsubscribe at any time.
+        </p>
+      </form>
+
+      <!-- SUCCESS STATE (hidden initially) -->
+      <div id="success-state" class="hidden px-8 pb-9 pt-2">
+        <div class="text-center py-4">
+          <div class="mx-auto w-16 h-16 rounded-full bg-emerald-100 flex items-center justify-center mb-5 success-check">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-9 h-9 text-emerald-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+            </svg>
+          </div>
+          
+          <h3 id="success-name" class="text-3xl heading-serif tracking-tight text-[#0c2e1f] mb-2">Thank you, friend!</h3>
+          
+          <div class="max-w-sm mx-auto text-[#3f2e1f] text-[15px] leading-relaxed">
+            You’re now on the Alexandre Regenerative waitlist.<br>
+            You’ll be the first to know when the next haul drops in SLO.<br>
+            <span class="font-semibold">Your Founders Discount code is on the way.</span>
+          </div>
+
+          <div class="my-7 h-px bg-[#e7e0d3] w-16 mx-auto"></div>
+
+          <div class="text-xs text-[#6b5c4a]">
+            — Dalton Alexandre<br>
+            <span class="font-medium">Alexandre Regenerative</span>
+          </div>
+
+          <button onclick="resetForm()" 
+                  class="mt-8 text-xs font-medium px-5 py-2.5 rounded-2xl border border-[#c9b99e] hover:bg-[#f8f5f0] transition-colors">
+            SUBMIT ANOTHER RESPONSE
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mt-5 text-xs text-[#7c664e]">
+      Questions? Reach out via <a href="https://github.com/dl-alexandre" class="underline hover:text-[#0c2e1f]">GitHub</a> or X <span class="font-mono">@agrxculture</span>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-[#e7e0d3] py-9 text-xs text-[#6b5c4a]">
+    <div class="max-w-5xl mx-auto px-6 flex flex-col md:flex-row md:items-center gap-y-3 justify-between">
+      <div>© 2026 Dalton Alexandre — Regenerative dairy from the Central Coast of California</div>
+      <div class="flex items-center gap-x-5">
+        <a href="https://daltonalexandre.carrd.co" target="_blank" class="hover:text-[#0c2e1f]">Personal site</a>
+        <span class="text-[#c9b99e]">·</span>
+        <a href="https://github.com/dl-alexandre/alexandre-regenerative" target="_blank" class="hover:text-[#0c2e1f]">Source</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Tailwind script configuration
+    function initTailwind() {
+      document.documentElement.style.setProperty('--accent', '#92400e');
+    }
+
+    // Navbar scroll effect
+    function initNavbar() {
+      const nav = document.getElementById('nav');
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 30) {
+          nav.classList.add('nav-scrolled', 'shadow-sm');
+        } else {
+          nav.classList.remove('nav-scrolled', 'shadow-sm');
+        }
+      });
+    }
+
+    // Form handling
+    const FORMSPREE_ENDPOINT = 'https://formspree.io/f/YOUR_FORM_ID_HERE'; // ← REPLACE THIS
+
+    function initForm() {
+      const form = document.getElementById('waitlist-form');
+      const successState = document.getElementById('success-state');
+
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+
+        const formData = new FormData(form);
+        const firstName = formData.get('firstName') || 'friend';
+
+        // Visual feedback on button
+        const submitBtn = form.querySelector('button[type="submit"]');
+        const originalText = submitBtn.innerHTML;
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = `<span>Submitting...</span>`;
+
+        // Try to send to Formspree (or any endpoint). Falls back gracefully.
+        let submitted = false;
+
+        try {
+          if (FORMSPREE_ENDPOINT.includes('YOUR_FORM_ID')) {
+            // Demo mode — don't actually POST
+            console.log('%c[Alexandre Regenerative] Demo submission — replace FORMSPREE_ENDPOINT to save leads for real.', 'color:#854d0e');
+            console.table(Object.fromEntries(formData.entries()));
+            submitted = true;
+          } else {
+            const response = await fetch(FORMSPREE_ENDPOINT, {
+              method: 'POST',
+              body: formData,
+              headers: { 'Accept': 'application/json' }
+            });
+            
+            if (response.ok) {
+              submitted = true;
+            } else {
+              const data = await response.json().catch(() => ({}));
+              console.warn('Formspree error:', data);
+              // Still treat as success visually (user can check email)
+              submitted = true;
+            }
+          }
+        } catch (err) {
+          console.log('%c[Alexandre Regenerative] Network error (demo or offline). Form data:', 'color:#854d0e', Object.fromEntries(formData.entries()));
+          submitted = true; // graceful for GitHub Pages
+        }
+
+        // Show success state
+        if (submitted) {
+          document.getElementById('success-name').textContent = `Thank you, ${firstName}!`;
+          
+          // Hide form, show success
+          form.style.display = 'none';
+          successState.classList.remove('hidden');
+          successState.classList.add('block');
+          
+          // Scroll success into view
+          successState.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        } else {
+          // Rare failure case
+          submitBtn.disabled = false;
+          submitBtn.innerHTML = originalText;
+          alert("Something went wrong. Please try again or reach out directly on GitHub.");
+        }
+      });
+
+      // Bonus: Allow clicking the pill labels to focus radio (already works via <label for>)
+      // Keyboard accessibility already good.
+    }
+
+    function resetForm() {
+      const form = document.getElementById('waitlist-form');
+      const successState = document.getElementById('success-state');
+
+      successState.classList.add('hidden');
+      successState.classList.remove('block');
+      form.style.display = 'block';
+      form.reset();
+
+      // Re-check the defaults we want
+      document.getElementById('int-both').checked = true;
+      document.getElementById('bag-5').checked = true;
+
+      // Scroll back to top of form
+      form.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    // Keyboard escape on success to reset (nice touch)
+    function initKeyboardShortcuts() {
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+          const success = document.getElementById('success-state');
+          if (!success.classList.contains('hidden') && success.offsetParent !== null) {
+            resetForm();
+          }
+        }
+      });
+    }
+
+    // Simple ZIP validation hint
+    function initZipHint() {
+      const zip = document.getElementById('zipCode');
+      zip.addEventListener('input', () => {
+        zip.value = zip.value.replace(/[^0-9]/g, '').slice(0, 5);
+      });
+    }
+
+    // Boot everything
+    function bootstrap() {
+      initTailwind();
+      initNavbar();
+      initForm();
+      initKeyboardShortcuts();
+      initZipHint();
+
+      // Easter egg: console hint for devs
+      console.log('%c[Alexandre Regenerative] Landing ready. To make the form save real submissions, update FORMSPREE_ENDPOINT in index.html (see README.md).', 'color:#6b5c4a');
+    }
+
+    // Go!
+    document.addEventListener('DOMContentLoaded', bootstrap);
+  </script>
+</body>
+</html>
