@@ -260,130 +260,27 @@
         </div>
       </div>
 
-      <!-- Demo notice -->
-      <div class="px-8 pt-5 pb-1">
-        <div class="flex items-center gap-x-2 text-[10px] text-amber-700 bg-amber-50 border border-amber-100 px-3 py-1.5 rounded-2xl">
-          <span>⚠️</span>
-          <span><strong>Demo mode active.</strong> Submissions are logged in console. Replace the Formspree endpoint in the code to capture real leads. See README.</span>
-        </div>
-      </div>
-
-      <!-- The Form -->
-      <form id="waitlist-form" class="px-8 pb-8 pt-4 space-y-6">
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
-          <!-- First Name -->
-          <div>
-            <label for="firstName" class="block text-sm font-medium text-[#3f2e1f] mb-1.5">First Name <span class="text-red-500">*</span></label>
-            <input id="firstName" name="firstName" type="text" required
-                   class="form-input w-full bg-[#f8f5f0] border border-[#d4c9b5] focus:border-[#0c2e1f] rounded-2xl px-4 py-3 text-base placeholder:text-[#9a8770]">
-          </div>
-
-          <!-- Email -->
-          <div>
-            <label for="email" class="block text-sm font-medium text-[#3f2e1f] mb-1.5">Email <span class="text-red-500">*</span></label>
-            <input id="email" name="email" type="email" required placeholder="you@domain.com"
-                   class="form-input w-full bg-[#f8f5f0] border border-[#d4c9b5] focus:border-[#0c2e1f] rounded-2xl px-4 py-3 text-base">
-          </div>
+      <!-- Embedded Google Form -->
+      <div class="p-4 sm:p-6">
+        <div class="rounded-2xl overflow-hidden border border-[#e7e0d3] bg-white">
+          <iframe 
+            src="https://docs.google.com/forms/d/e/1FAIpQLSc20a9Qlmq4JSECwPPOWdwaZnFyzwE3Cm76I0ccQO3He4r96g/viewform?embedded=true" 
+            width="100%" 
+            height="1250" 
+            frameborder="0" 
+            marginheight="0" 
+            marginwidth="0"
+            style="display: block;"
+          >
+            Loading form…
+          </iframe>
         </div>
 
-        <!-- ZIP -->
-        <div>
-          <label for="zipCode" class="block text-sm font-medium text-[#3f2e1f] mb-1.5">ZIP Code <span class="text-red-500">*</span></label>
-          <input id="zipCode" name="zipCode" type="text" inputmode="numeric" pattern="[0-9]{5}" maxlength="5" placeholder="93401" required
-                 class="form-input w-full sm:w-48 bg-[#f8f5f0] border border-[#d4c9b5] focus:border-[#0c2e1f] rounded-2xl px-4 py-3 text-base">
-          <p class="text-xs text-[#7c664e] mt-1.5">Used to prioritize Central Coast deliveries</p>
-        </div>
-
-        <!-- Interest -->
-        <div>
-          <label class="block text-sm font-medium text-[#3f2e1f] mb-2.5">What are you most interested in?</label>
-          <div class="grid grid-cols-2 sm:grid-cols-4 gap-2" id="interest-group">
-            <div class="choice-pill">
-              <input type="radio" id="int-whole" name="interest" value="Whole Milk Powder" class="hidden peer">
-              <label for="int-whole" class="block text-center border border-[#d4c9b5] peer-checked:border-[#0c2e1f] peer-checked:bg-[#0c2e1f] peer-checked:text-white hover:bg-[#f8f5f0] text-sm py-3 px-3 rounded-2xl font-medium">Whole Milk Powder</label>
-            </div>
-            <div class="choice-pill">
-              <input type="radio" id="int-nonfat" name="interest" value="Non-Fat Milk Powder" class="hidden peer">
-              <label for="int-nonfat" class="block text-center border border-[#d4c9b5] peer-checked:border-[#0c2e1f] peer-checked:bg-[#0c2e1f] peer-checked:text-white hover:bg-[#f8f5f0] text-sm py-3 px-3 rounded-2xl font-medium">Non-Fat Milk Powder</label>
-            </div>
-            <div class="choice-pill">
-              <input type="radio" id="int-both" name="interest" value="Both" class="hidden peer" checked>
-              <label for="int-both" class="block text-center border border-[#d4c9b5] peer-checked:border-[#0c2e1f] peer-checked:bg-[#0c2e1f] peer-checked:text-white hover:bg-[#f8f5f0] text-sm py-3 px-3 rounded-2xl font-medium">Both</label>
-            </div>
-            <div class="choice-pill">
-              <input type="radio" id="int-unsure" name="interest" value="Not sure yet" class="hidden peer">
-              <label for="int-unsure" class="block text-center border border-[#d4c9b5] peer-checked:border-[#0c2e1f] peer-checked:bg-[#0c2e1f] peer-checked:text-white hover:bg-[#f8f5f0] text-sm py-3 px-3 rounded-2xl font-medium">Not sure yet</label>
-            </div>
-          </div>
-        </div>
-
-        <!-- Bag Size -->
-        <div>
-          <label class="block text-sm font-medium text-[#3f2e1f] mb-2.5">Preferred bag size</label>
-          <div class="grid grid-cols-3 gap-2" id="bag-group">
-            <div class="choice-pill">
-              <input type="radio" id="bag-1" name="bagSize" value="1 lb" class="hidden peer">
-              <label for="bag-1" class="block text-center border border-[#d4c9b5] peer-checked:border-[#0c2e1f] peer-checked:bg-[#0c2e1f] peer-checked:text-white hover:bg-[#f8f5f0] text-sm py-3 px-3 rounded-2xl font-medium">1 lb</label>
-            </div>
-            <div class="choice-pill">
-              <input type="radio" id="bag-5" name="bagSize" value="5 lb" class="hidden peer" checked>
-              <label for="bag-5" class="block text-center border border-[#d4c9b5] peer-checked:border-[#0c2e1f] peer-checked:bg-[#0c2e1f] peer-checked:text-white hover:bg-[#f8f5f0] text-sm py-3 px-3 rounded-2xl font-medium">5 lb</label>
-            </div>
-            <div class="choice-pill">
-              <input type="radio" id="bag-bulk" name="bagSize" value="10+ lb (bulk)" class="hidden peer">
-              <label for="bag-bulk" class="block text-center border border-[#d4c9b5] peer-checked:border-[#0c2e1f] peer-checked:bg-[#0c2e1f] peer-checked:text-white hover:bg-[#f8f5f0] text-sm py-3 px-3 rounded-2xl font-medium">10+ lb (bulk)</label>
-            </div>
-          </div>
-        </div>
-
-        <!-- Usage -->
-        <div>
-          <label for="usage" class="block text-sm font-medium text-[#3f2e1f] mb-1.5">How do you plan to use it? <span class="font-normal text-[#7c664e]">(optional)</span></label>
-          <textarea id="usage" name="usage" rows="3" placeholder="Coffee, smoothies, baking, homemade yogurt, recipes..."
-                    class="form-input w-full bg-[#f8f5f0] border border-[#d4c9b5] focus:border-[#0c2e1f] rounded-3xl px-4 py-3 text-base resize-y"></textarea>
-        </div>
-
-        <!-- Submit -->
-        <button type="submit"
-                class="w-full h-[58px] mt-2 bg-[#0c2e1f] active:bg-black hover:bg-black transition-colors text-white font-semibold text-[15px] tracking-[-0.1px] rounded-3xl flex items-center justify-center gap-x-2 shadow-inner">
-          <span>Reserve My Spot &amp; Get 15% Off First Haul</span>
-        </button>
-
-        <!-- Legal -->
-        <p class="text-center text-[11px] text-[#7c664e] pt-1 leading-snug px-4">
-          By signing up you agree to receive occasional product updates from Alexandre Regenerative. 
-          You can unsubscribe at any time.
-        </p>
-      </form>
-
-      <!-- SUCCESS STATE (hidden initially) -->
-      <div id="success-state" class="hidden px-8 pb-9 pt-2">
-        <div class="text-center py-4">
-          <div class="mx-auto w-16 h-16 rounded-full bg-emerald-100 flex items-center justify-center mb-5 success-check">
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-9 h-9 text-emerald-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M5 10l7-7m0 0l7 7m-7-7v18" />
-            </svg>
-          </div>
-          
-          <h3 id="success-name" class="text-3xl heading-serif tracking-tight text-[#0c2e1f] mb-2">Thank you, friend!</h3>
-          
-          <div class="max-w-sm mx-auto text-[#3f2e1f] text-[15px] leading-relaxed">
-            You’re now on the Alexandre Regenerative waitlist.<br>
-            You’ll be the first to know when the next haul drops in SLO.<br>
-            <span class="font-semibold">Your Founders Discount code is on the way.</span>
-          </div>
-
-          <div class="my-7 h-px bg-[#e7e0d3] w-16 mx-auto"></div>
-
-          <div class="text-xs text-[#6b5c4a]">
-            — Dalton Alexandre<br>
-            <span class="font-medium">Alexandre Regenerative</span>
-          </div>
-
-          <button onclick="resetForm()" 
-                  class="mt-8 text-xs font-medium px-5 py-2.5 rounded-2xl border border-[#c9b99e] hover:bg-[#f8f5f0] transition-colors">
-            SUBMIT ANOTHER RESPONSE
-          </button>
+        <div class="text-center mt-4">
+          <a href="https://forms.gle/oZaUSPXjW8TqJRVG6" target="_blank" 
+             class="inline-flex items-center gap-x-1.5 text-sm text-[#5c4630] hover:text-[#0c2e1f] font-medium underline-offset-2 hover:underline">
+            Having trouble viewing the form? Open it in a new tab →
+          </a>
         </div>
       </div>
     </div>
@@ -423,125 +320,13 @@
       });
     }
 
-    // Form handling
-    const FORMSPREE_ENDPOINT = 'https://formspree.io/f/YOUR_FORM_ID_HERE'; // ← REPLACE THIS
-
-    function initForm() {
-      const form = document.getElementById('waitlist-form');
-      const successState = document.getElementById('success-state');
-
-      form.addEventListener('submit', async (e) => {
-        e.preventDefault();
-
-        const formData = new FormData(form);
-        const firstName = formData.get('firstName') || 'friend';
-
-        // Visual feedback on button
-        const submitBtn = form.querySelector('button[type="submit"]');
-        const originalText = submitBtn.innerHTML;
-        submitBtn.disabled = true;
-        submitBtn.innerHTML = `<span>Submitting...</span>`;
-
-        // Try to send to Formspree (or any endpoint). Falls back gracefully.
-        let submitted = false;
-
-        try {
-          if (FORMSPREE_ENDPOINT.includes('YOUR_FORM_ID')) {
-            // Demo mode — don't actually POST
-            console.log('%c[Alexandre Regenerative] Demo submission — replace FORMSPREE_ENDPOINT to save leads for real.', 'color:#854d0e');
-            console.table(Object.fromEntries(formData.entries()));
-            submitted = true;
-          } else {
-            const response = await fetch(FORMSPREE_ENDPOINT, {
-              method: 'POST',
-              body: formData,
-              headers: { 'Accept': 'application/json' }
-            });
-            
-            if (response.ok) {
-              submitted = true;
-            } else {
-              const data = await response.json().catch(() => ({}));
-              console.warn('Formspree error:', data);
-              // Still treat as success visually (user can check email)
-              submitted = true;
-            }
-          }
-        } catch (err) {
-          console.log('%c[Alexandre Regenerative] Network error (demo or offline). Form data:', 'color:#854d0e', Object.fromEntries(formData.entries()));
-          submitted = true; // graceful for GitHub Pages
-        }
-
-        // Show success state
-        if (submitted) {
-          document.getElementById('success-name').textContent = `Thank you, ${firstName}!`;
-          
-          // Hide form, show success
-          form.style.display = 'none';
-          successState.classList.remove('hidden');
-          successState.classList.add('block');
-          
-          // Scroll success into view
-          successState.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        } else {
-          // Rare failure case
-          submitBtn.disabled = false;
-          submitBtn.innerHTML = originalText;
-          alert("Something went wrong. Please try again or reach out directly on GitHub.");
-        }
-      });
-
-      // Bonus: Allow clicking the pill labels to focus radio (already works via <label for>)
-      // Keyboard accessibility already good.
-    }
-
-    function resetForm() {
-      const form = document.getElementById('waitlist-form');
-      const successState = document.getElementById('success-state');
-
-      successState.classList.add('hidden');
-      successState.classList.remove('block');
-      form.style.display = 'block';
-      form.reset();
-
-      // Re-check the defaults we want
-      document.getElementById('int-both').checked = true;
-      document.getElementById('bag-5').checked = true;
-
-      // Scroll back to top of form
-      form.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
-
-    // Keyboard escape on success to reset (nice touch)
-    function initKeyboardShortcuts() {
-      document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape') {
-          const success = document.getElementById('success-state');
-          if (!success.classList.contains('hidden') && success.offsetParent !== null) {
-            resetForm();
-          }
-        }
-      });
-    }
-
-    // Simple ZIP validation hint
-    function initZipHint() {
-      const zip = document.getElementById('zipCode');
-      zip.addEventListener('input', () => {
-        zip.value = zip.value.replace(/[^0-9]/g, '').slice(0, 5);
-      });
-    }
-
     // Boot everything
     function bootstrap() {
       initTailwind();
       initNavbar();
-      initForm();
-      initKeyboardShortcuts();
-      initZipHint();
 
-      // Easter egg: console hint for devs
-      console.log('%c[Alexandre Regenerative] Landing ready. To make the form save real submissions, update FORMSPREE_ENDPOINT in index.html (see README.md).', 'color:#6b5c4a');
+      // Helpful console note for the owner
+      console.log('%c[Alexandre Regenerative] Landing page ready. Google Form is now embedded live.', 'color:#166534');
     }
 
     // Go!
