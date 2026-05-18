@@ -35,7 +35,7 @@ After you enable GitHub Pages:
 2. Click **Settings** → **Pages** (in the left sidebar)
 3. Under "Build and deployment":
    - **Source**: Deploy from a branch
-   - **Branch**: `main` / `(root)`
+   - **Branch**: `master` / `(root)`
 4. Click **Save**
 
 GitHub will publish the site in ~30–60 seconds.  
